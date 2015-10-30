@@ -17,7 +17,7 @@
   Asteroid.RADIUS = 25;
   Asteroid.SPEED = 4;
   Asteroid.IMAGE = new Image();
-  Asteroid.IMAGE.src = './images/asteroid.png';
+  Asteroid.IMAGE.src = '../images/asteroid.png';
 
   Asteroids.Util.inherits(Asteroid, Asteroids.MovingObject);
 
