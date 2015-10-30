@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script src="./vendor/jquery-2.1.4.min.js"></script>
+    <title>Asteroids</title>
+  </head>
+
+  <body>
+    <canvas></canvas>
+    <body></body>
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+
+    <script type="application/javascript" src="lib/util.js"></script>
+    <script type="application/javascript" src="lib/movingObject.js"></script>
+    <script type="application/javascript" src="lib/asteroid.js"></script>
+    <script type="application/javascript" src="lib/ship.js"></script>
+    <script type="application/javascript" src="lib/bullet.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
+
+    <script type="application/javascript">
+      (function () {
+        var canvasEl = document.getElementsByTagName("canvas")[0];
+        //sets height and width of the game
+        canvasEl.width = Asteroids.Game.DIM_X;
+        canvasEl.height = Asteroids.Game.DIM_Y;
+
+        var ctx = canvasEl.getContext("2d");
+        //ctx is the drawing context on the canvas
+        var game = new Asteroids.Game();
+        GameView = new Asteroids.GameView(game, ctx);
+        GameView.start();
+      })();
+    </script>
+  </body>
+</html>
