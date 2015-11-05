@@ -30,7 +30,7 @@
     this.ctx.fillText("Press enter to play", 600, 150);
     this.ctx.fillText("<- Rotate Left", 600, 200);
     this.ctx.fillText("-> Rotate Right", 600, 250);
-    this.ctx.fillText("Up Arrow Key To Thurst", 600, 300);
+    this.ctx.fillText("Up Arrow Key To Thrust", 600, 300);
     this.ctx.fillText("Down Arrow Key To Stop Ship", 600, 350);
     this.ctx.fillText("Space Bar To Shoot", 600, 400);
   };
