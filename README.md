@@ -1,7 +1,7 @@
 # Asteroids
 [Click here to play!](http://sophiez2628.github.io/Asteroids-/)
 
-![screenshot](./asteroids_image.png)
+![screenshot](images/asteroids_image.png)
 
 An one-player browser game built using JavaScript and HTML5 Canvas.
 
@@ -13,7 +13,7 @@ var inherits = Util.inherits = function (ChildClass, BaseClass) {
   Surrogate.prototype = BaseClass.prototype;
   ChildClass.prototype = new Surrogate();
 };
-... 
+...
 Asteroids.Util.inherits(Asteroid, Asteroids.MovingObject);
 </pre></code>
 * The collision detection algorithm is based on the distance between the centers of the objects.
