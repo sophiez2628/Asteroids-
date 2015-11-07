@@ -59,7 +59,6 @@
     this.allObjects().forEach(function (obj1) {
       game.allObjects().forEach(function (obj2) {
         if (obj1 == obj2) {
-          // don't allow self-collision
           return;
         }
 
