@@ -30,7 +30,7 @@
     this.ctx.fillText("press enter to play", 600, 150);
     this.ctx.fillText("use arrows to move", 600, 200);
     this.ctx.fillText("space bar to shoot", 600, 250);
-    this.ctx.fillText("(ship can only shoot after moving)", 600, 350);
+    this.ctx.fillText("(note: when game initially begins, asteroids can't destroy ship & ship can only shoot after moving)", 600, 350);
   };
 
   GameView.prototype.bindKeyHandlers = function () {
